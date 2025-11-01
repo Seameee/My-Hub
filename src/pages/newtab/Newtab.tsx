@@ -31,8 +31,8 @@ export default function Newtab() {
   return (
     <div className="flex h-screen">
       {/* 侧边栏 */}
-      <aside className="w-64 bg-white text-main p-6 flex flex-col border-r border-gray-200">
-        <h1 className="text-3xl font-bold mb-12 text-main">My Hub</h1>
+      <aside className="w-64 bg-transparent text-white p-6 flex flex-col border-r border-gray-200">
+        <h1 className="text-3xl font-bold mb-12 text-white">My Hub</h1>
         {/* 导航菜单 */}
         <nav>
           <ul>
@@ -40,7 +40,7 @@ export default function Newtab() {
             <li>
               <a
                 className={`flex items-center py-3 px-4 rounded-full ${
-                  page === 'home' ? 'bg-black text-white' : 'text-gray-500 hover:bg-gray-100 hover:text-black'
+                  page === 'home' ? 'bg-white text-black' : 'text-white hover:bg-white/20 hover:text-white'
                 }`}
                 href="#"
                 onClick={() => setPage('home')}>
@@ -53,8 +53,8 @@ export default function Newtab() {
               <a
                 className={`flex items-center py-3 px-4 rounded-full ${
                   page === 'bookmarks'
-                    ? 'bg-black text-white'
-                    : 'text-gray-500 hover:bg-gray-100 hover:text-black'
+                    ? 'bg-white text-black'
+                    : 'text-white hover:bg-white/20 hover:text-white'
                 }`}
                 href="#"
                 onClick={() => setPage('bookmarks')}>
@@ -67,8 +67,8 @@ export default function Newtab() {
               <a
                 className={`flex items-center py-3 px-4 rounded-full ${
                   page === 'history'
-                    ? 'bg-black text-white'
-                    : 'text-gray-500 hover:bg-gray-100 hover:text-black'
+                    ? 'bg-white text-black'
+                    : 'text-white hover:bg-white/20 hover:text-white'
                 }`}
                 href="#"
                 onClick={() => setPage('history')}>
@@ -81,7 +81,7 @@ export default function Newtab() {
 
         {/* Settings Entry */}
         <div className="mt-auto">
-            <a href="#" onClick={() => setIsSettingsOpen(true)} className="flex items-center py-3 px-4 rounded-full text-gray-500 hover:bg-gray-100 hover:text-black">
+            <a href="#" onClick={() => setIsSettingsOpen(true)} className="flex items-center py-3 px-4 rounded-full text-white hover:bg-white/20 hover:text-white">
                 <span className="material-symbols-outlined icon-linear mr-4">settings</span>
                 Settings
             </a>

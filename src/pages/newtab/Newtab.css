@@ -20,16 +20,16 @@ body::before {
     z-index: -1;
 }
 .text-main {
-    color: #1A1A1A;
+    color: #FFFFFF;
 }
 .text-secondary {
-    color: #6B7280;
+    color: #E5E5E5;
 }
 .bg-secondary {
     background-color: #F5F5F5;
 }
 .card {
-    background-color: #FFFFFF;
+    background-color: rgba(255, 255, 255, 0.5);
     border-radius: 20px;
     box-shadow: 0 4px 20px rgba(0,0,0,0.08);
     padding: 1.5rem;

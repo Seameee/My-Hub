@@ -218,10 +218,10 @@ export const HomePage: React.FC<HomePageProps> = ({ recommendations, timeRange }
       ) : (
         <>
           <div className="mb-10">
-            <div className="flex items-center mb-2">
-              <span className="material-symbols-outlined text-main mr-3 icon-linear">schedule</span>
-              <h2 className="text-xl font-bold text-main">Moments in History</h2>
-            </div>
+          <div className="flex items-center mb-2">
+            <span className="material-symbols-outlined text-white mr-3 icon-linear">schedule</span>
+            <h2 className="text-xl font-bold text-white">Moments in History</h2>
+          </div>
             <p className="text-secondary ml-9">
               In the past 14 days, you have frequently visited these websites during the current time period
               <span className="block font-mono text-xs mt-1">{timeRange}</span>
