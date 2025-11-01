@@ -1,6 +1,23 @@
 body {
     font-family: 'Inter', sans-serif;
-    background-color: #FFFFFF;
+    background-image: url('https://api.seaya.link/daily');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(8px);
+    z-index: -1;
 }
 .text-main {
     color: #1A1A1A;
