@@ -88,7 +88,7 @@ export default function Newtab() {
         </div>
       </aside>
       {/* 主内容区域 */}
-      <main className="flex-1 overflow-y-auto bg-[#F9F9F9]">
+      <main className="flex-1 overflow-y-auto">
         {/* 根据 page 状态条件渲染对应的页面组件 */}
         {page === 'home' ? (
           <HomePage recommendations={recommendations} timeRange={timeRange} />
